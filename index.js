@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }))
 
 // routes
 const productRoutes = require('./api/routes/products');
-app.use('/products', productRoutes);
+app.use('/books', productRoutes);
 
 app.listen(port, () => {
     console.log(`Running at http://localhost:${port}`);
